@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+example.py
+
+# Pytest
+.pytest_cache/
+.coverage
+
+# Tox
+.tox/
+
+# Ruff
+.ruff_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.DS_Store
+*.bak
+*.swp
+*.tmp
+*~
