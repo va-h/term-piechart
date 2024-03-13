@@ -1,9 +1,11 @@
 # Term-Piechart
+[![Tests](https://github.com/va-h/term-piechart/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/va-h/term-piechart/actions/workflows/tests.yml)
 [![codecov](https://codecov.io/github/va-h/term-piechart/graph/badge.svg?token=EXDVWU5KBK)](https://codecov.io/github/va-h/term-piechart)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/term-piechart)
 
 Displays pie charts in your terminal. This is a direct python rewrite of the Ruby Gem TTY-Pie.
 Maybe someone else would find this usefull as well.
-It requires no external dependencies and supports ASCII and HEX color codes as well as a automatic generation of random colors.
+It requires no external dependencies and supports ASCII and HEX color codes as well as automatic generation of random colors.
 
 ## Installation
 ```shell
@@ -12,7 +14,7 @@ python -m pip install term-piechart
 
 ## Examples
 
-![](.github/images/chart_requests.jpg)
+![](https://github.com/va-h/term-piechart/blob/main/.github/images/chart_requests.jpg?raw=true)
 ```python
 from term_piechart import Pie
 
@@ -32,7 +34,6 @@ pie = Pie(
     legend={"line": 0, "format": "{label} {name:<8} {percent:>5.2f}% [{value}]"},
 )
 ```
-
 
 More in [examples](./examples)
 
@@ -70,8 +71,7 @@ _term-piechart_ is a direct python derivate of:
 ### Tox
 
 There's a minimal tox.ini with a requirement on [pyenv](https://github.com/pyenv/pyenv) and [un-def/tox-pyenv-redux](https://github.com/un-def/tox-pyenv-redux).
-
-zsh users can use this as a reference.
+Zsh users can use this as a reference.
 
 ```shell
 curl https://pyenv.run | bash

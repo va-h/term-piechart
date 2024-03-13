@@ -13,9 +13,16 @@ license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
+    "Environment :: Console",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: POSIX",
+    "Topic :: Terminals",
 ]
 
 [project.optional-dependencies]
@@ -23,6 +30,10 @@ dev = [
     "pytest",
     "pytest-cov"
 ]
+[project.urls]
+Changelog = "https://github.com/va-h/term-piechart/releases"
+Homepage = "https://github.com/va-h/term-piechart"
+Source = "https://github.com/va-h/term-piechart"
 
 [tool.pytest.ini_options]
 addopts = [
