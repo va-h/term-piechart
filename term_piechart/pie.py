@@ -166,7 +166,7 @@ class Pie:
 
         for y in range(-self.radius, self.radius + 1):
             width = round(sqrt(self.radius * self.radius - y * y) * self.aspect_ratio)
-            width = width if width != 0 else round(self.radius / self.aspect_ratio)
+            width = width if width != 0 or self.aspect_ratio == 1 else round(self.radius / self.aspect_ratio)
 
             if not self.top:
                 output.append((self.center_x - width) * " ")
